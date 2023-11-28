@@ -10,10 +10,10 @@
 
 const listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const somaQuadradosPares = (listaNumeros) => {
+const mediaNumerosImpares = (listaNumeros) => {
   let impares = listaNumeros.filter((numero) => numero % 2 === 1);
   let somaImpares = impares.reduce((acc, numero) => acc + numero, 0);
   return somaImpares / impares.length;
 };
 
-console.log(somaQuadradosPares(listaNumeros));
+console.log(mediaNumerosImpares(listaNumeros));
