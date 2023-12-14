@@ -1,0 +1,16 @@
+console.clear()
+const minhaData = new Date().toLocaleDateString('pt-BR')
+const article = document.querySelector('main article')
+let date = document.querySelector('#data').value
+// const descricao = document.createElement('span') 
+// const valor = document.createElement('span')
+// const data = document.createElement('span')
+// const tipo = document.createElement('span')
+// article.appendChild(descricao)
+// article.appendChild(valor)
+// article.appendChild(data)
+// article.appendChild(tipo)
+// console.log(article)
+date = minhaData 
+console.log(date)
+// console.log(new Date(Date(date)).toLocaleString('pt-BR'))

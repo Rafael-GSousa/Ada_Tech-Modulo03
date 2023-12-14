@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestão Financeira</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Gestão Financeira</h1>
+      <nav>
+        <ul>
+          <li><a href="">Adicionar Transação</a></li>
+          <li><a href="">Adicionar Meta</a></li>
+          <li><a href="">Relatório Financeiro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <form id="transacao-form">
+        <div class="adicionarTransacao">
+          <label for="tipo">Tipo:</label>
+          <select name="" id="tipo">
+            <option disabled selected>escolha uma opção</option>
+            <option value="receita">receita</option>
+            <option value="despesa">despesa</option>
+          </select>
+        </div>
+
+        <div class="adicionarTransacao adicionarMeta atualizarMeta">
+          <label for="descricao">Descrição:</label>
+          <input
+            type="text"
+            placeholder="descreva sua transação"
+            id="descricao"
+          />
+        </div>
+        <div class="adicionarTransacao adicionarMeta">
+          <label for="valor">Valor R$:</label>
+          <input
+            type="number"
+            name="valor"
+            id="valor"
+            placeholder="valor"
+            step="0.01"
+          />
+        </div>
+
+        <div class="adicionarTransacao">
+          <label for="categoria">Categoria:</label>
+          <input type="text" placeholder="categoria" id="categoria" />
+        </div>
+
+        <div class="adicionarTransacao">
+          <label for="data">Data:</label>
+          <input type="date" name="data" id="data" />
+        </div>
+
+        <div class="adicionarTransacao adicionarMeta atualizarMeta">
+          <label for="progresso">Valor Investido R$:</label>
+          <input
+            type="number"
+            name="progresso"
+            id="progresso"
+            placeholder="valor investido"
+            step="0.01"
+          />
+        </div>
+
+        <div class="adicionarTransacao adicionarMeta atualizarMeta">
+          <button type="submit">Adicionar transação</button>
+        </div>
+      </form>
+
+      <section></section>
+    </main>
+    <footer></footer>
+
+    <!-- <script>
+      function obterValor() {
+        // Obter o elemento de entrada de data pelo ID
+        var campoData = document.getElementById("data");
+
+        // Obter o valor inserido
+        var valorData = campoData.value;
+        valorData = new Date(valorData);
+
+        // Obter o offset do fuso horário em minutos
+        var offset = new Date().getTimezoneOffset();
+
+        // Ajustar a data pelo offset
+        valorData.setMinutes(valorData.getMinutes() + offset);
+
+        // Converter para o fuso horário local
+        var dataLocal = valorData.toLocaleString("pt-BR");
+
+        // Exibir o valor no console
+        console.log("Valor da data: ", dataLocal);
+      }
+    </script> -->
+
+    <script src="dom.js"></script>
+  </body>
+</html>
